@@ -15,6 +15,13 @@
 		2EA718FC261DD9A3004D80C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EA718FA261DD9A3004D80C1 /* LaunchScreen.storyboard */; };
 		2EA71907261DD9A3004D80C1 /* MyTradeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA71906261DD9A3004D80C1 /* MyTradeTests.swift */; };
 		2EA71912261DD9A3004D80C1 /* MyTradeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA71911261DD9A3004D80C1 /* MyTradeUITests.swift */; };
+		2EA7192A261E0546004D80C1 /* AlphaAdvApi-Convinience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA71927261E0546004D80C1 /* AlphaAdvApi-Convinience.swift */; };
+		2EA7192B261E0546004D80C1 /* AlphaAdvApi-Convinience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA71927261E0546004D80C1 /* AlphaAdvApi-Convinience.swift */; };
+		2EA7192C261E0546004D80C1 /* AlphaAdvApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA71928261E0546004D80C1 /* AlphaAdvApi.swift */; };
+		2EA7192D261E0546004D80C1 /* AlphaAdvApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA71928261E0546004D80C1 /* AlphaAdvApi.swift */; };
+		2EA7192E261E0546004D80C1 /* AlphaAdvApi-Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA71929261E0546004D80C1 /* AlphaAdvApi-Constants.swift */; };
+		2EA7192F261E0546004D80C1 /* AlphaAdvApi-Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA71929261E0546004D80C1 /* AlphaAdvApi-Constants.swift */; };
+		2EBCB127262355AD00380D72 /* TimeSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBCB126262355AD00380D72 /* TimeSeries.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,10 @@
 		2EA7190D261DD9A3004D80C1 /* MyTradeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTradeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EA71911261DD9A3004D80C1 /* MyTradeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTradeUITests.swift; sourceTree = "<group>"; };
 		2EA71913261DD9A3004D80C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EA71927261E0546004D80C1 /* AlphaAdvApi-Convinience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AlphaAdvApi-Convinience.swift"; sourceTree = "<group>"; };
+		2EA71928261E0546004D80C1 /* AlphaAdvApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaAdvApi.swift; sourceTree = "<group>"; };
+		2EA71929261E0546004D80C1 /* AlphaAdvApi-Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AlphaAdvApi-Constants.swift"; sourceTree = "<group>"; };
+		2EBCB126262355AD00380D72 /* TimeSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSeries.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +110,12 @@
 		2EA718EE261DD9A1004D80C1 /* MyTrade */ = {
 			isa = PBXGroup;
 			children = (
+				2EA71924261E050D004D80C1 /* AlphaAdv */,
+				2EA71925261E050D004D80C1 /* Controllers */,
+				2EA71923261E050D004D80C1 /* Models */,
+				2EA71926261E050D004D80C1 /* Views */,
 				2EA718EF261DD9A1004D80C1 /* AppDelegate.swift */,
 				2EA718F1261DD9A1004D80C1 /* SceneDelegate.swift */,
-				2EA718F3261DD9A1004D80C1 /* ViewController.swift */,
 				2EA718F5261DD9A1004D80C1 /* Main.storyboard */,
 				2EA718F8261DD9A3004D80C1 /* Assets.xcassets */,
 				2EA718FA261DD9A3004D80C1 /* LaunchScreen.storyboard */,
@@ -126,6 +140,39 @@
 				2EA71913261DD9A3004D80C1 /* Info.plist */,
 			);
 			path = MyTradeUITests;
+			sourceTree = "<group>";
+		};
+		2EA71923261E050D004D80C1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2EBCB126262355AD00380D72 /* TimeSeries.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2EA71924261E050D004D80C1 /* AlphaAdv */ = {
+			isa = PBXGroup;
+			children = (
+				2EA71929261E0546004D80C1 /* AlphaAdvApi-Constants.swift */,
+				2EA71927261E0546004D80C1 /* AlphaAdvApi-Convinience.swift */,
+				2EA71928261E0546004D80C1 /* AlphaAdvApi.swift */,
+			);
+			path = AlphaAdv;
+			sourceTree = "<group>";
+		};
+		2EA71925261E050D004D80C1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2EA718F3261DD9A1004D80C1 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2EA71926261E050D004D80C1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +305,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EA7192C261E0546004D80C1 /* AlphaAdvApi.swift in Sources */,
 				2EA718F4261DD9A1004D80C1 /* ViewController.swift in Sources */,
+				2EBCB127262355AD00380D72 /* TimeSeries.swift in Sources */,
+				2EA7192A261E0546004D80C1 /* AlphaAdvApi-Convinience.swift in Sources */,
+				2EA7192E261E0546004D80C1 /* AlphaAdvApi-Constants.swift in Sources */,
 				2EA718F0261DD9A1004D80C1 /* AppDelegate.swift in Sources */,
 				2EA718F2261DD9A1004D80C1 /* SceneDelegate.swift in Sources */,
 			);
@@ -269,6 +320,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EA71907261DD9A3004D80C1 /* MyTradeTests.swift in Sources */,
+				2EA7192F261E0546004D80C1 /* AlphaAdvApi-Constants.swift in Sources */,
+				2EA7192B261E0546004D80C1 /* AlphaAdvApi-Convinience.swift in Sources */,
+				2EA7192D261E0546004D80C1 /* AlphaAdvApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
