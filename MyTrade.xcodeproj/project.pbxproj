@@ -22,6 +22,12 @@
 		2EA7192E261E0546004D80C1 /* AlphaAdvApi-Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA71929261E0546004D80C1 /* AlphaAdvApi-Constants.swift */; };
 		2EA7192F261E0546004D80C1 /* AlphaAdvApi-Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA71929261E0546004D80C1 /* AlphaAdvApi-Constants.swift */; };
 		2EBCB127262355AD00380D72 /* TimeSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBCB126262355AD00380D72 /* TimeSeries.swift */; };
+		2EBCB12D2624B15C00380D72 /* TimeSeriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBCB12C2624B15C00380D72 /* TimeSeriesCell.swift */; };
+		2EBCB14126275E3500380D72 /* ComparisonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBCB14026275E3500380D72 /* ComparisonViewController.swift */; };
+		2EBCB1462628950100380D72 /* DailyAdjustedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBCB1452628950100380D72 /* DailyAdjustedCell.swift */; };
+		2EBCB14B2628A9EA00380D72 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBCB14A2628A9EA00380D72 /* SettingsViewController.swift */; };
+		2EBCB1502628ABB700380D72 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBCB14F2628ABB700380D72 /* AppData.swift */; };
+		2EF1134A2628B82100858938 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF113492628B82100858938 /* Keychain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +66,12 @@
 		2EA71928261E0546004D80C1 /* AlphaAdvApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaAdvApi.swift; sourceTree = "<group>"; };
 		2EA71929261E0546004D80C1 /* AlphaAdvApi-Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AlphaAdvApi-Constants.swift"; sourceTree = "<group>"; };
 		2EBCB126262355AD00380D72 /* TimeSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSeries.swift; sourceTree = "<group>"; };
+		2EBCB12C2624B15C00380D72 /* TimeSeriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSeriesCell.swift; sourceTree = "<group>"; };
+		2EBCB14026275E3500380D72 /* ComparisonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparisonViewController.swift; sourceTree = "<group>"; };
+		2EBCB1452628950100380D72 /* DailyAdjustedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyAdjustedCell.swift; sourceTree = "<group>"; };
+		2EBCB14A2628A9EA00380D72 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		2EBCB14F2628ABB700380D72 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		2EF113492628B82100858938 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +122,7 @@
 		2EA718EE261DD9A1004D80C1 /* MyTrade */ = {
 			isa = PBXGroup;
 			children = (
+				2EF1134E2628B89A00858938 /* Utilities */,
 				2EA71924261E050D004D80C1 /* AlphaAdv */,
 				2EA71925261E050D004D80C1 /* Controllers */,
 				2EA71923261E050D004D80C1 /* Models */,
@@ -145,6 +158,7 @@
 		2EA71923261E050D004D80C1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2EBCB14F2628ABB700380D72 /* AppData.swift */,
 				2EBCB126262355AD00380D72 /* TimeSeries.swift */,
 			);
 			path = Models;
@@ -164,6 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				2EA718F3261DD9A1004D80C1 /* ViewController.swift */,
+				2EBCB14026275E3500380D72 /* ComparisonViewController.swift */,
+				2EBCB14A2628A9EA00380D72 /* SettingsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -171,8 +187,18 @@
 		2EA71926261E050D004D80C1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2EBCB12C2624B15C00380D72 /* TimeSeriesCell.swift */,
+				2EBCB1452628950100380D72 /* DailyAdjustedCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		2EF1134E2628B89A00858938 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2EF113492628B82100858938 /* Keychain.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,12 +332,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EA7192C261E0546004D80C1 /* AlphaAdvApi.swift in Sources */,
+				2EBCB1462628950100380D72 /* DailyAdjustedCell.swift in Sources */,
+				2EF1134A2628B82100858938 /* Keychain.swift in Sources */,
+				2EBCB14B2628A9EA00380D72 /* SettingsViewController.swift in Sources */,
+				2EBCB12D2624B15C00380D72 /* TimeSeriesCell.swift in Sources */,
+				2EBCB14126275E3500380D72 /* ComparisonViewController.swift in Sources */,
 				2EA718F4261DD9A1004D80C1 /* ViewController.swift in Sources */,
 				2EBCB127262355AD00380D72 /* TimeSeries.swift in Sources */,
 				2EA7192A261E0546004D80C1 /* AlphaAdvApi-Convinience.swift in Sources */,
 				2EA7192E261E0546004D80C1 /* AlphaAdvApi-Constants.swift in Sources */,
 				2EA718F0261DD9A1004D80C1 /* AppDelegate.swift in Sources */,
 				2EA718F2261DD9A1004D80C1 /* SceneDelegate.swift in Sources */,
+				2EBCB1502628ABB700380D72 /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

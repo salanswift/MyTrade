@@ -28,6 +28,7 @@ extension AlphaAdvApi {
 		static let METADATA = "Meta Data"
 		static let FUNCTION = "function"
 		static let INTERVAL = "interval"
+		static let OUTPUT_SIZE = "outputsize"
 	}
 	
 	
